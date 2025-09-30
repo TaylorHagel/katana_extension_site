@@ -22,7 +22,8 @@ kramdown:
 minima:
   skin: auto
   social_links:
-    github: your-username
+    github: TaylorHagel
+    linkedin: taylorhagel
     # Add other social links as needed
 
 # Header pages (these will appear in navigation)
@@ -58,13 +59,10 @@ exclude:
   - LICENSE
 
 # SEO settings
-author: "Katana Extension Team"
-email: your-email@example.com
-twitter:
-  username: 
-facebook:
-  app_id: 
-  publisher: 
+author: "Taylor Hagel"
+email: taylor.hagel@katanamrp.com
+
 
 # Social media links (update with your actual profiles)
-github_username: your-username 
+github_username: TaylorHagel
+linkedin_username: taylorhagel

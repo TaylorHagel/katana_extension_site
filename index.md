@@ -2,8 +2,6 @@
 layout: home
 ---
 
-# Katana Chrome Extension
-
 Enhance your Katana MRP workflow with powerful automation tools that streamline common tasks and improve productivity.
 
 ## Quick Start
