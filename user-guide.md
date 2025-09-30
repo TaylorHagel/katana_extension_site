@@ -413,4 +413,4 @@ The **History box** at the top keeps a log of everything you do - think of it as
 
 ---
 
-**Need more technical details?** Check out the [Technical Documentation]({{ site.baseurl }}/readme/) for complete documentation, API architecture, and development information.
+**Need more technical details?** Check out the [Technical Documentation](/readme/) for complete documentation, API architecture, and development information.

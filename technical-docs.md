@@ -6,7 +6,7 @@ permalink: /readme/
 
 # Katana Chrome Extension
 
-> **👋 New User?** Check out [**User Guide**]({{ site.baseurl }}/user-guide/) for simple, step-by-step guides on using each tool.
+> **👋 New User?** Check out [**User Guide**](/instructions/) for simple, step-by-step guides on using each tool.
 >
 > **🔧 Developer/Technical User?** You're in the right place! This page contains complete technical documentation.
 
@@ -293,4 +293,4 @@ Planned enhancements include:
 
 ---
 
-**Need step-by-step instructions?** Check out the [User Guide]({{ site.baseurl }}/user-guide/) for detailed, non-technical instructions on using each tool.
+**Need step-by-step instructions?** Check out the [User Guide](/instructions/) for detailed, non-technical instructions on using each tool.

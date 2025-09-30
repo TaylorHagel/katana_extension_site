@@ -2,40 +2,24 @@
 layout: home
 ---
 
-Enhance your Katana MRP workflow with powerful automation tools that streamline common tasks and improve productivity.
-
 ## Quick Start
 
-- **New User?** Start with our [User Guide]({{ site.baseurl }}/instructions/) for step-by-step instructions
-- **Developer?** Check out the [Technical Documentation]({{ site.baseurl }}/readme/) for complete API details
+Enhance your Katana MRP workflow with powerful automation tools that streamline common tasks and improve productivity.
 
-<!-- ## ✨ Key Features
-
-### ⚡ Workflow Automation
-Streamline common Katana tasks with advanced tools for customers, suppliers, service items, and more.
-
-### 📊 Data Management  
-Import, export, and edit data efficiently with built-in validation and error handling.
-
-### ⌨️ Keyboard Shortcuts
-Speed up your workflow with customizable keyboard shortcuts for all major functions.
-
-### 🔒 Secure & Private
-Your API keys are stored locally and never transmitted to third parties. Full privacy protection.
-
-### 🔧 Developer Friendly
-Complete API architecture with modular design and comprehensive debugging tools. -->
+- **New User?** Start with our [User Guide](/instructions/) for step-by-step instructions
+- **Developer?** Check out the [Technical Documentation](/readme/) for complete API details
 
 ## 📚 Documentation
 
-- **[User Guide]({{ site.baseurl }}/instructions/)** - Simple, step-by-step guides for each tool
-- **[Technical Documentation]({{ site.baseurl }}/readme/)** - Complete technical details and API architecture  
-- **[Changelog]({{ site.baseurl }}/changelog/)** - Version history and updates
-- **[Privacy Policy]({{ site.baseurl }}/privacy/)** - How your data is handled
-- **[License]({{ site.baseurl }}/license/)** - Usage terms and conditions
+- **[User Guide](/instructions/)** - Simple, step-by-step guides for each tool
+- **[Technical Documentation](/readme/)** - Complete technical details and API architecture  
+- **[Changelog](/changelog/)** - Version history and updates
+- **[Privacy Policy](/privacy/)** - How your data is handled
+- **[License](/license/)** - Usage terms and conditions
 
 ## 🛠️ Available Tools
 
+- **Historical Order Import** - Find value in Katana's Planning and Forecasting add-on sooner
 - **Customer Management** - Import, export, and bulk edit customer data
 - **Supplier Management** - Manage supplier information and contacts  
 - **Service Items** - Track open orders and manage service items

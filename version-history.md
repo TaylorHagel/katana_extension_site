@@ -125,6 +125,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ---
 
-**For detailed usage instructions, see the [User Guide]({{ site.baseurl }}/user-guide/)**
+**For detailed usage instructions, see the [User Guide](/instructions/)**
 
-**For technical details, see the [Technical Documentation]({{ site.baseurl }}/technical-docs/)**
+**For technical details, see the [Technical Documentation](/readme/)**
