@@ -112,8 +112,8 @@ We may update this privacy policy to reflect changes in our practices or for leg
 
 For privacy-related questions or concerns:
 
-- **GitHub Issues:** [https://github.com/TaylorHagel/katana-chrome-extension/issues](https://github.com/TaylorHagel/katana-chrome-extension/issues)
-- **Email:** [Contact through GitHub profile](https://github.com/TaylorHagel)
+- **GitHub Issues:** [https://github.com/TaylorMadeTools/katana_extension_site/issues](https://github.com/TaylorMadeTools/katana_extension_site/issues)
+- **Email:** [Contact through GitHub profile](https://github.com/TaylorMadeTools)
 
 ## Legal Basis
 

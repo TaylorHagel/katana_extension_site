@@ -22,7 +22,7 @@ kramdown:
 minima:
   skin: auto
   social_links:
-    github: TaylorHagel
+    github: TaylorMadeTools
     linkedin: taylorhagel
     # Add other social links as needed
 
@@ -64,5 +64,5 @@ email: taylor.hagel@katanamrp.com
 
 
 # Social media links (update with your actual profiles)
-github_username: TaylorHagel
+github_username: TaylorMadeTools
 linkedin_username: taylorhagel
