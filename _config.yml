@@ -18,6 +18,21 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
+# Minima theme settings
+minima:
+  skin: auto
+  social_links:
+    github: your-username
+    # Add other social links as needed
+
+# Header pages (these will appear in navigation)
+header_pages:
+  - user-guide.md
+  - technical-docs.md
+  - version-history.md
+  - privacy-policy.md
+  - license-info.md
+
 # Include files that start with underscores
 include:
   - _pages
@@ -36,9 +51,15 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - README.md
+  - INSTRUCTIONS.md
+  - CHANGELOG.md
+  - PRIVACY.md
+  - LICENSE
 
 # SEO settings
 author: "Katana Extension Team"
+email: your-email@example.com
 twitter:
   username: 
 facebook:
@@ -46,4 +67,4 @@ facebook:
   publisher: 
 
 # Social media links (update with your actual profiles)
-github_username: 
+github_username: your-username 
