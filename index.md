@@ -2,16 +2,16 @@
 layout: home
 ---
 
-# 🗾 Katana Chrome Extension
+# Katana Chrome Extension
 
 Enhance your Katana MRP workflow with powerful automation tools that streamline common tasks and improve productivity.
 
-## 🚀 Quick Start
+## Quick Start
 
 - **New User?** Start with our [User Guide]({{ site.baseurl }}/instructions/) for step-by-step instructions
 - **Developer?** Check out the [Technical Documentation]({{ site.baseurl }}/readme/) for complete API details
 
-## ✨ Key Features
+<!-- ## ✨ Key Features
 
 ### ⚡ Workflow Automation
 Streamline common Katana tasks with advanced tools for customers, suppliers, service items, and more.
@@ -26,7 +26,7 @@ Speed up your workflow with customizable keyboard shortcuts for all major functi
 Your API keys are stored locally and never transmitted to third parties. Full privacy protection.
 
 ### 🔧 Developer Friendly
-Complete API architecture with modular design and comprehensive debugging tools.
+Complete API architecture with modular design and comprehensive debugging tools. -->
 
 ## 📚 Documentation
 
@@ -54,5 +54,3 @@ Complete API architecture with modular design and comprehensive debugging tools.
 4. **Start using tools** - they appear automatically based on your current Katana page
 
 ---
-
-Ready to get started? Check out the [User Guide]({{ site.baseurl }}/instructions/) for detailed instructions!
