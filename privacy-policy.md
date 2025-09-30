@@ -158,4 +158,4 @@ Katana Master Extension is committed to protecting your privacy. This extension 
 
 **Questions about privacy?** Contact taylor.hagel@katanamrp.com
 
-**Need support?** See our [User Guide](/instructions/) or [Technical Documentation](/readme/)
+**Need support?** See our [User Guide]({{ site.baseurl }}/instructions/) or [Technical Documentation]({{ site.baseurl }}/readme/)

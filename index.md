@@ -6,16 +6,16 @@ layout: home
 
 Enhance your Katana MRP workflow with powerful automation tools that streamline common tasks and improve productivity.
 
-- **New User?** Start with our [User Guide](/instructions/) for step-by-step instructions
-- **Developer?** Check out the [Technical Documentation](/readme/) for complete API details
+- **New User?** Start with our [User Guide]({{ site.baseurl }}/instructions/) for step-by-step instructions
+- **Developer?** Check out the [Technical Documentation]({{ site.baseurl }}/readme/) for complete API details
 
 ## 📚 Documentation
 
-- **[User Guide](/instructions/)** - Simple, step-by-step guides for each tool
-- **[Technical Documentation](/readme/)** - Complete technical details and API architecture  
-- **[Changelog](/changelog/)** - Version history and updates
-- **[Privacy Policy](/privacy/)** - How your data is handled
-- **[License](/license/)** - Usage terms and conditions
+- **[User Guide]({{ site.baseurl }}/instructions/)** - Simple, step-by-step guides for each tool
+- **[Technical Documentation]({{ site.baseurl }}/readme/)** - Complete technical details and API architecture  
+- **[Changelog]({{ site.baseurl }}/changelog/)** - Version history and updates
+- **[Privacy Policy]({{ site.baseurl }}/privacy/)** - How your data is handled
+- **[License]({{ site.baseurl }}/license/)** - Usage terms and conditions
 
 ## 🛠️ Available Tools
 
