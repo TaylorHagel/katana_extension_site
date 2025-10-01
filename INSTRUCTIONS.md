@@ -123,7 +123,7 @@ The **History box** at the top keeps a log of everything you do - think of it as
 
 **Quick access to common actions:**
 
-- **Ctrl+Shift+K** → Opens Katana admin panel in new tab
+- **Ctrl+Shift+K** → Opens Katana admin panel
 - **Insert key** → Clicks "Add New Row" buttons (after setup)
 
 **To set up the Insert key:**
