@@ -18,6 +18,50 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Advanced export/import capabilities
 - Integration with additional Katana API endpoints
 
+## [1.2.0] - 2025-10-02
+
+### Added
+- **Inventory Balancing System** - Automatic stock adjustment creation to balance historical sales (Stock Added = Stock Sold principle)
+- **Cost Averaging Logic** - Averages unit costs per SKU when multiple costs are provided in import data
+
+### Changed
+- **Rate limiting delay** - 1.5 second → 1 second delay between calls
+- **Improved Shopify Column Mapping** - Changed from "Fulfillment Status" to "Lineitem fulfillment status" for more accurate order filtering
+- **Fulfillment-Only Import Logic** - Shopify imports now process only fulfilled orders, skipping unfulfilled orders entirely to maintain inventory accuracy
+- **Multi-Phase Import Process** - Structured import workflow: Stock Adjustments → Customers → Sales Orders → Fulfillments
+- **Real-time Progress Tracking** - Enhanced progress system with per-phase updates and detailed status reporting
+
+### Fixed
+- **Status Field Mapping** - Corrected Shopify status field mapping to use proper column references
+- **Template Format Filtering** - Removed inappropriate status filtering from template format imports
+- **Cost Handling Logic** - Improved cost per unit calculation with proper averaging and fallback to $0.00 when no costs provided
+- **Comprehensive Error Handling** - Enhanced error reporting with specific per-row status tracking and downloadable results logs
+
+### Security
+- **Data Integrity Checks** - Comprehensive validation of historical order data before processing
+
+## [1.1.0] - 2025-10-01
+
+### Added
+- **🔒 Lockout Prevention System** - Display Tools interface is now always accessible on settings pages to prevent users from being locked out when all tools are disabled
+- **Independent Tool Architecture** - Separated Display Tools from Keyboard Shortcuts for better modularity and reliability
+- **Enhanced Tool Visibility Management** - Display Tools now show "ALWAYS ON" status to indicate they cannot be disabled
+
+### Changed
+- **Improved Settings Page Architecture** - Display Tools and Keyboard Shortcuts now load independently, allowing keyboard shortcuts to be disabled without affecting tool management
+- **Better Tool Loading Logic** - Enhanced tool registration system with proper separation of concerns between display management and individual tool functionality
+- **Streamlined Event Handling** - Simplified event attachment with improved timing and reliability
+
+### Fixed
+- **🚨 CRITICAL: CSP Violation** - Removed inline event handlers (`onmouseover`, `onmouseout`) from sidepanel.html that were causing Content Security Policy errors
+- **Tool Management Lockout** - Fixed issue where disabling all tools would hide the Display Tools interface, preventing users from re-enabling tools
+- **Event Handler Timing** - Resolved DOM timing issues with event attachment using `requestAnimationFrame` for proper sequencing
+- **Tool Visibility Logic** - Corrected tool loading behavior to ensure Display Tools are always available regardless of other tool settings
+
+### Security
+- **Content Security Policy Compliance** - Replaced inline JavaScript event handlers with CSS-only hover effects to meet CSP requirements
+- **Enhanced Extension Security** - Improved event handling patterns following Chrome extension security best practices
+
 ## [1.0.0] - 2025-09-30
 
 ### Added

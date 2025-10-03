@@ -34,6 +34,7 @@ permalink: /instructions/
 - [Service Management](#service-management)
 - [Price List Management](#price-list-management)
 - [Multiple Email Tool](#multiple-email-tool)
+- [Historical Sales Orders Import](#historical-sales-orders-import)
 - [Data Export Tools](#data-export-tools)
 - [Troubleshooting](#troubleshooting)
 
@@ -339,6 +340,138 @@ The **History box** at the top keeps a log of everything you do - think of it as
 - **Format requirement:** Must be separated by ", " (comma and space)
 - **Automatic activation:** No setup required - works on all purchase order pages
 - **Error handling:** Gracefully processes validation errors and extracts valid emails
+
+---
+
+## Historical Sales Orders Import
+
+### Setting Up Historical Imports
+
+**What this does:** Import historical sales orders from Shopify or other systems to establish proper inventory levels and sales history in Katana.
+
+**⚠️ IMPORTANT: This tool affects inventory closing dates and should be used with caution!**
+
+#### Step 1: Adjust Inventory Closing Date
+
+1. **Go to any sales page** in Katana (the tool appears on sales-related pages)
+2. **Find "Historical Sales Orders Import" in the side panel**
+3. **Click "Get Current Closing Period Date"** to see your current setting
+4. **⚠️ Consult your accountant** before changing inventory closing dates
+5. **Click "Open Costing Settings"** to adjust the date if needed
+   - Set it to at least 2 days before your oldest historical order
+   - Maximum: 18 months ago from today
+
+#### Step 2: Select Location
+
+1. **Click "Load Locations"** to see available inventory locations
+2. **Select the location** where stock adjustments should be applied
+3. **Location is required** for historical imports
+
+### Using Shopify Exports
+
+**When to use:** You have Shopify order export files and want to import historical sales data.
+
+#### Preparing Shopify Export
+
+1. **Export from Shopify:**
+   - Go to Orders in your Shopify admin
+   - Export orders with "All columns" selected
+   - **Optional:** Add "Cost Per Item" column for accurate inventory costing
+
+2. **Important Column:** The tool uses "Lineitem fulfillment status" (Column X)
+   - **Only "fulfilled" orders are imported**
+   - **"unfulfilled" orders are completely skipped**
+   - This ensures inventory accuracy
+
+#### Importing Shopify Data
+
+1. **Download template first** (optional, for reference)
+2. **Select your Shopify CSV file**
+3. **Enter Shopify store name** (optional, for order tracking)
+4. **Click "Import Historical Sales Orders"**
+5. **Monitor progress** - the tool will:
+   - Filter to only fulfilled orders
+   - Create stock adjustments for inventory
+   - Create customers (if needed)
+   - Create sales orders
+   - Create fulfillments
+
+### Using Template Format
+
+**When to use:** You have historical order data in a custom format or want to create test data.
+
+#### Template Fields
+
+Download the template to see required columns:
+- `sku` - Product SKU (required)
+- `qty` - Quantity sold (required)
+- `unit_price` - Sale price per unit
+- `unit_cost` - Cost per unit (optional, for inventory costing)
+- `currency` - Order currency (defaults to USD)
+- `customer_email` - Customer email
+- `billing_name` - Customer name
+- `shipping_name` - Shipping contact name
+- Address fields (shipping_address_line1, city, state, zip, country)
+
+#### Template Import Process
+
+1. **Download the template**
+2. **Fill in your historical order data**
+   - One line item per row
+   - Multiple rows can have the same order if needed
+3. **All template orders are treated as "fulfilled"**
+4. **Import the completed file**
+
+### Understanding the Import Process
+
+#### What Gets Created
+
+**For each import, the tool creates:**
+
+1. **Stock Adjustment:**
+   - Adds inventory quantities to match historical sales
+   - Uses average cost per unit if multiple costs provided
+   - Date set to 1 day before oldest order
+   - **Goal:** Balance inventory (Stock Added = Stock Sold)
+
+2. **Customers:**
+   - Creates customers that don't already exist
+   - Matches by email first, then by name
+   - Creates "Unknown Shopify Customer" if no contact info
+
+3. **Sales Orders:**
+   - Creates historical sales orders with proper dates
+   - Links to created/matched customers
+   - Includes shipping addresses when available
+
+4. **Fulfillments:**
+   - Creates fulfillments for orders with fulfillment dates
+   - Marks orders as completed in Katana
+
+#### Filtering Logic
+
+**Shopify Files:**
+- **Fulfilled orders only** - unfulfilled orders are skipped entirely
+- Uses "Lineitem fulfillment status" column for accurate filtering
+- Provides detailed filtering summary in results
+
+**Template Files:**
+- **All orders processed** - no status filtering applied
+- Assumes all template data represents completed sales
+
+#### Results and Logging
+
+- **Detailed progress tracking** with real-time updates
+- **Comprehensive results** showing counts of created items
+- **Error handling** with specific error messages
+- **Download results log** for detailed per-row status
+- **History integration** for session tracking
+
+#### Cost Handling
+
+- **With costs:** Average cost per SKU used for stock adjustment
+- **Without costs:** Stock adjustment created with $0.00 cost
+- **Shopify "Cost Per Item" column is optional** but recommended
 
 ---
 

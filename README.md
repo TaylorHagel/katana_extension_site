@@ -23,6 +23,7 @@
   - [8. Keyboard Shortcuts Tool](#8-keyboard-shortcuts-tool)
   - [9. Tool Visibility Management](#9-tool-visibility-management)
   - [10. Multiple Email Tool (Purchase Orders)](#10-multiple-email-tool-purchase-orders)
+  - [11. Historical Sales Orders Import Tool](#11-historical-sales-orders-import-tool)
 - [API Architecture](#api-architecture)
   - [Centralized API Layer](#centralized-api-layer--completed)
   - [API Modules](#api-modules-srctoolsapi)
@@ -204,6 +205,35 @@ This Chrome extension enhances the Katana MRP web experience by providing advanc
   - **Limited Supplier Updates:** In-app supplier updates will not function for suppliers with multiple emails - use Admin Panel instead
   - **API Bypass:** Multiple email updates bypass Katana's standard data validation
 
+### 11. Historical Sales Orders Import Tool
+
+- **Pages:** Loads on sales-related pages for historical data import.
+- **Features:**
+  - **Shopify Integration:** Direct import from Shopify order exports with automatic format detection
+  - **Fulfillment Filtering:** Only imports "fulfilled" orders from Shopify exports (uses "Lineitem fulfillment status" column)
+  - **Template Support:** Custom template format for non-Shopify historical data
+  - **Inventory Balancing:** Creates stock adjustments to balance inventory (Stock Added = Stock Sold)
+  - **Customer Management:** Automatically creates customers that don't exist, matches by email/name
+  - **Cost Averaging:** Averages unit costs per SKU when multiple costs are provided
+  - **Comprehensive Creation:** Creates stock adjustments, customers, sales orders, and fulfillments
+  - **Date Validation:** Ensures compatibility with inventory closing dates (18-month maximum lookback)
+  - **Real-time Progress:** Detailed progress tracking with per-phase updates
+  - **Results Logging:** Comprehensive results with downloadable status logs
+- **Import Process:**
+  1. **Stock Adjustment:** Creates inventory to match historical sales (dated 1 day before oldest order)
+  2. **Customer Creation:** Creates missing customers with contact information and addresses
+  3. **Sales Order Creation:** Imports historical orders with proper dates and customer links
+  4. **Fulfillment Creation:** Marks orders as fulfilled with historical fulfillment dates
+- **Shopify Requirements:**
+  - Standard Shopify order export with all columns
+  - "Lineitem fulfillment status" column for accurate filtering
+  - Optional "Cost Per Item" column for inventory costing
+- **⚠️ Important Considerations:**
+  - **Inventory Impact:** Adjusts inventory closing dates and stock levels
+  - **Accountant Consultation:** Recommend consulting accountant before changing inventory closing dates
+  - **18-Month Limit:** Cannot import orders older than 18 months from current date
+  - **Fulfilled Orders Only:** Shopify imports skip all unfulfilled orders to maintain inventory accuracy
+
 ## API Architecture
 
 ### Centralized API Layer ✅ COMPLETED
@@ -221,6 +251,8 @@ The extension features a fully implemented, centralized API architecture that el
 - **`priceLists.js`** - Price list and price list customer operations ✅
 - **`services.js`** - Service operations and management ✅
 - **`salesOrders.js`** - Sales order operations and sales order rows ✅
+- **`factory.js`** - Factory settings and inventory closing date operations ✅
+- **`stockAdjustments.js`** - Stock adjustment creation and management ✅
 
 #### Utility Layer (`src/tools/utils/`)
 
