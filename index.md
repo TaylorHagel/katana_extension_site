@@ -3,6 +3,8 @@ layout: home
 title: Katana Chrome Extension - Home
 ---
 
+## [Chrome Extension Link] (https://chromewebstore.google.com/detail/katana-master-extension/eneeifeammnjoeplhliicplgmimcpkai?authuser=0&hl=en)
+
 ## Quick Start
 
 Enhance your Katana MRP workflow with powerful automation tools that streamline common tasks and improve productivity.
