@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Changelog
+title: Katana Chrome Extension - Version History
 permalink: /changelog/
 ---
 

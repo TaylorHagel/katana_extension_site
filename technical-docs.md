@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Technical Documentation
+title: Katana Chrome Extension - Technical Documentation
 permalink: /readme/
 ---
 
-# Katana Chrome Extension
+# How does it work?
 
 > **👋 New User?** Check out [**User Guide**]({{ site.baseurl }}/instructions/) for simple, step-by-step guides on using each tool.
 >

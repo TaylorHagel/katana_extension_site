@@ -1,10 +1,10 @@
 ---
 layout: page
-title: User Guide
+title: Katana Chrome Extension - User Guide
 permalink: /instructions/
 ---
 
-# Katana Chrome Extension - User Guide
+# Instructions
 
 **Welcome!** This guide will help you use the Katana Master Extension to streamline your workflow. No technical experience required - just follow the steps below.
 

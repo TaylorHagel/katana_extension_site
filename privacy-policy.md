@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Privacy Policy
+title: title: Katana Chrome Extension - Privacy Policy
 permalink: /privacy/
 ---
-
-# Privacy Policy - Katana Master Extension
 
 **Last Updated:** September 30, 2025
 
