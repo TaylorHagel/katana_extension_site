@@ -1,6 +1,6 @@
 ---
 layout: page
-title: title: Katana Chrome Extension - Privacy Policy
+title: Privacy Policy
 permalink: /privacy/
 ---
 

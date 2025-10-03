@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Katana Chrome Extension - Technical Documentation
+title: Technical Documentation
 permalink: /readme/
 ---
 

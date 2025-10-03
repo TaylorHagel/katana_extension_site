@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Katana Chrome Extension - User Guide
+title: User Guide
 permalink: /instructions/
 ---
 

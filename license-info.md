@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Katana Chrome Extension - License Information
+title: License Information
 permalink: /license/
 ---
 

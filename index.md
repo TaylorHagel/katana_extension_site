@@ -21,8 +21,8 @@ Enhance your Katana MRP workflow with powerful automation tools that streamline 
 ## 🛠️ Available Tools
 
 - **Historical Order Import** - Find value in Katana's Planning and Forecasting add-on sooner
-- **Customer Management** - Import, export, and bulk edit customer data
-- **Supplier Management** - Manage supplier information and contacts  
+- **Customer Management** - Import, export, and bulk create/edit customer data
+- **Supplier Management** - Import, export, and bulk create/edit supplier data  
 - **Service Items** - Track open orders and manage service items
 - **Price Lists** - Assign customers to price lists efficiently
 - **Custom Fields** - Export and manage custom field data
